@@ -1,0 +1,16 @@
+.content-wrapper {
+  height: 100vh;
+}
+
+.left-side, .main-sidebar {
+  padding-top: 0;
+}
+
+.dist-parameters {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.box:has(> div.dist-parameters) {
+  margin-bottom: 0;
+}
