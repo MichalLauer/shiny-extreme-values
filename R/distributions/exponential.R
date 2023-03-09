@@ -34,8 +34,8 @@ exponentialServer <- function(id) {
       # Compare table
       observeEvent(input$check, {
         distributions$exponential <- if (input$check) dist
-        statTableServer(distributions)
       }, ignoreInit = T)
+      output$stats <- renderDT(statTableServer())
     }
   )
 }

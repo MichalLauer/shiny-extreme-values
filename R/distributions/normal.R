@@ -34,8 +34,8 @@ normalServer <- function(id) {
       # Update the comparison list
       observeEvent(input$check, {
         distributions$normal <- if (input$check) dist
-        statTableServer(distributions)
       }, ignoreInit = T)
+      output$stats <- renderDT(statTableServer())
     }
   )
 }

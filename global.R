@@ -5,7 +5,7 @@ library(plotly)
 library(ggplot2)
 library(dplyr)
 library(DT)
-library(purrr, include.only = c("compact", "walk"))
+library(purrr)
 
 # Source files
 files <- list.files(path = "./R", recursive = T, full.names = T)
