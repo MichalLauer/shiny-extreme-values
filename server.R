@@ -5,9 +5,9 @@ server <- function(input, output, session) {
   # Distributions
   normalServer("distNormal")
   exponentialServer("distExponential")
-  # # Distributions table
-  # output$dist_stats <- renderDT({
-  #   datatable(mtcars)
-  # })
+  # Distributions table
+  output$dist_stats <- renderDT({
+    datatable(mtcars)
+  })
 
 }

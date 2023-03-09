@@ -1,7 +1,3 @@
-allDistributionsModule <- function() {
-
-}
-
 ui <- dashboardPage(
   dashboardHeader(title = "My Dashboard", disable = T),
   dashboardSidebar(
