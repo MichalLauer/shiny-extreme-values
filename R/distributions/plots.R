@@ -1,7 +1,5 @@
 plotsUI <- function(id) {
   fluidRow(
-    column(
-      width = 12,
       box(
         width = 6, status = "warning",
         plotlyOutput(NS(id, "pdf"))
@@ -10,7 +8,6 @@ plotsUI <- function(id) {
         width = 6, status = "primary",
         plotlyOutput(NS(id, "cdf"))
       )
-    )
   )
 }
 

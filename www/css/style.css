@@ -14,3 +14,15 @@
 div.box:has(> div.dist-parameters) {
   margin-bottom: 0;
 }
+
+/* ----- */
+/* Tails */
+/* ----- */
+.tail-parameters {
+    display: flex;
+    align-items: flex-end;
+}
+
+.tail-parameters > div {
+    margin: 0 10px 0 0;
+}

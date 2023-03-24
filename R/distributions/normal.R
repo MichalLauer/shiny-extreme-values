@@ -4,20 +4,23 @@ normalUI <- function(id) {
     plotsUI(id),
     fluidRow(
       column(
-        width = 3,
+        width = 2,
         verticalLayout(
           box(
             width = 12, status = "success", class = "dist-parameters",
             numericInput(NS(id, "mu"), "Mu", 0, width = "100px"),
             numericInput(NS(id, "sigma2"), "sigma2", 1, width = "100px")
           ),
-          column(
-            width = 11, offset = 1,
+          box(
+            width = 12,
             checkboxInput(NS(id, "check"), "Add to table")
           )
         )
       ),
-      statTableUI(id)
+      column(
+        width = 10,
+        statTableUI(id)
+      )
     )
   )
 }

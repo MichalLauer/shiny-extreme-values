@@ -13,7 +13,7 @@ ui <- dashboardPage(
     tabItems(
       normalUI("distNormal"),
       exponentialUI("distExponential"),
-      tailsUI("tails")
+      heavyTailsUI("tailsHeavy")
     )
   )
 )

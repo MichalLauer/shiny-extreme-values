@@ -6,5 +6,6 @@ server <- function(input, output, session) {
   # Distributions
   normalServer("distNormal")
   exponentialServer("distExponential")
-
+  # Tails
+  heavyTailsServer("tailsHeavy")
 }
